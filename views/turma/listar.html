@@ -1,0 +1,32 @@
+{{define "head"}}
+    <title>Lista de Turmas</title>
+   
+{{end}}
+{{define "header"}}
+    <ul>
+        <li><a href="/turmas-cadastrar">Cadastrar Nova Turma</a></li>
+        <li><a href="/turmas-list">Listar Turmas</a> </li>
+    </ul>   
+{{end}}
+{{define "body"}}
+    <table>
+        <tr>
+            <th>Nível</th>
+            <th>Série</th>
+            <th>Turno</th>
+            <th>Ano</th>
+        </tr>
+        
+            {{range $_, $t := .}}
+            <tr>
+                <td>{{$t.Nivel}}</td>
+                <td>{{$t.Serie}}</td>
+                <td>{{$t.Turno}}</td>
+                <td>{{$t.AnoLetivo}}</td>
+            </tr>
+               
+            {{end}}
+       
+        
+    </table>
+{{end}}

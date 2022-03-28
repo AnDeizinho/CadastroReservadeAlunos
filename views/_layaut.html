@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    {{define "base"}}
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="public/style/main.css" media="screen">
+        {{template "head" .}}
+        
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/turmas">turmas</a></li>
+                    <li><a href="/clientes">clientes</a></li>
+                    <li><a href="/Novo">Novo</a></li>
+                </ul>
+            </nav>
+          
+         </header>
+            {{template "header" .}}
+        <section>
+            {{template "body" .}}
+        </section>
+    </body>
+    {{end}}
+</html>

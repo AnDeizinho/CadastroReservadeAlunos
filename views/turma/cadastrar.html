@@ -1,0 +1,49 @@
+{{define "head"}}
+    <title>Cadastrar Turma</title>
+
+{{end}}
+
+{{define "header"}}
+    <h1>Nova Turma</h1>
+
+{{end}}
+
+{{define "body"}}
+    <form action="/turmas-cad" method="post">
+        <div>
+            <label>Nivel :</label>
+            <select name="nivel">
+                <option value="Infantil">Infantil</option>
+                <option value="Infantil">Fundamental</option>
+            </select>
+        </div>
+        <div>
+            <label>Série :</label>
+        <select name="serie">
+            <option value="Pré Maternal">Pré Maternal</option>
+            <option value="Maternal">Maternal</option>
+            <option value="1º Período">1º Período"</option>
+            <option value="2º Período">2º Período"</option>
+            <option value="1º Série">1º Série</option>
+            <option value="2º Série">2º Série</option>
+            <option value="3º Série">3º Série</option>
+            <option value="4º Série">4º Série</option>
+            <option value="5º Série">5º Série</option>
+        </select>
+        </div>
+        <div>
+            <label>Turno :</label>
+        <select name="turno">
+            <option value="Matutino">Matutino</option>
+            <option value="Vespertino">Vespertino</option>
+        </select>
+        
+        </div>
+        <div>
+            <label>Ano : </label>
+            <input type="number" name="ano" >
+        </div>
+        <input type="submit" value="Cadastrar">
+
+    </form>
+{{end}}
