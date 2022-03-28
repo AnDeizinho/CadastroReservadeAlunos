@@ -1,5 +1,7 @@
 # CadastroReservadeAlunos
-<h3>1 - Para roda o programa</h3>
+
+
+<h3>1 - Para rodar o projeto na sua máquina</h3>
 <ol>
   <li>Antes de mais nada é exencialmente nescessário que você instale o golang na sua máquina para poder rodar e compilar este projeto</li>
   <li>agora dê um git clone neste repositório</li>
@@ -15,4 +17,15 @@
 <code>
   go build main.go
 </code>
+   <li>Pode ser que o Sistema Operacional solicite a autorização para o uso da porta :5000 do firewall. É só altorizar que ta tudo certo</li>
+    <li>Agora é só abrir o navegador de sua preferencia e digitar "localhost:5000" no campo da url</li>
+  <li>se prefirir rodar o projeto na porta :80 basta alterar a linha 17 do arquivo main.go.<br>
+    <code>servidor := http.Server{Addr: ":5000", Handler: Rotas()}</code> <br>mude para <br>
+    <code>servidor := http.Server{Addr: ":5000", Handler: Rotas()}</code>
+  </li>
 </ol>
+
+<h3>2 - Como o projeto esta estruturado</h3>
+
+
+
